@@ -1,0 +1,259 @@
+.sticky-nav {
+  position: absolute;
+  width: 100%;
+  height: 62px;
+  z-index: 15;
+  top: -70px;
+  transition: 0.5s ease-in-out;
+  &__reveal {
+    top: 0;
+    position: fixed;
+  }
+}
+
+
+.sticky-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: $black;
+  .searchbox__mobile {
+    display: block;
+  }
+  .article-desc {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 650px;
+    .article-title {
+      color: $white;
+      @include body-medium;
+      font-size: .85em;
+      &:before {
+        content: 'Now Reading:';
+        @include body-bold;
+        padding-right: 8px;
+      }
+    }
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  .back-btn {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    @include body-bold;
+    color: $white;
+    font-size: .85em;
+    &:hover {
+      color: $red;
+    }
+    @media (max-width: $screen-xs) {
+      display: none;
+    }
+  }
+
+  .searchbox {
+    min-width: 56px;
+  }
+
+  .searchbox-icon, .searchbox-submit {
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    background-color: $red;
+    color: $white;
+    &:hover {
+      background-color: $red;
+    }
+  }
+
+  .searchbox-input {
+    height: 56px;
+  }
+}
+
+.sticky-nav-btn {
+  position: absolute;
+  padding: 1em 1.25em;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 65px;
+  height: 56px;
+  border-right: 1px solid $white-30;
+  #hamburger {
+    position: absolute;
+    transform: rotate(0deg) translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.progress-container {
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+}
+
+.progress-bar {
+  background-color: $red;
+  height: 6px;
+  width: 0%;
+}
+
+
+.nav-sticky {
+  position: fixed;
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  padding: 0;
+  background-color: $red;
+  z-index: 20;
+  border-top: 2px solid #972525;
+  display: block;
+  overflow-y: scroll;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+  &__open {
+    transform: translateX(0);
+  }
+  &__top {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #972525;
+    .sticky-logo {
+      position: absolute;
+      width: 200px;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
+    .sticky-close {
+      @include icomoon("close", "after", false);
+      font-size: 2em;
+      color: $white;
+      padding: .25em;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+
+  > ul {
+    list-style: none;
+    display: block;
+
+    li {
+      position: relative;
+      display: block;
+      border-bottom: 2px solid #972525;
+
+      &.active > a {
+        color: $black;
+        padding: 1em 1.2em 1em 1.5em;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 100%;
+          background-color: $black;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    a {
+      @include body-bold;
+      text-transform: uppercase;
+      color: $white;
+      font-size: 0.9em;
+      padding: 1em 1.2em;
+      display: block;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        color: $black;
+        padding: 1em 1.2em 1em 1.5em;
+      }
+    }
+    .sub-menu {
+      &:after {
+        content: "\e908";
+        font-family: 'icomoon';
+        font-size: 8px;
+        position: absolute;
+        display: block;
+        transition: all 0.15s ease-in;
+        color: $white;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 2em;
+      }
+
+      &:hover {
+        color: $black;
+
+        &:after {
+          color: $black;
+        }
+      }
+
+      &.clicked,
+      &:active {
+        color: $white;
+
+        &:after {
+          transform: translateY(-50%) rotate(180deg);
+        }
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .nav-dropdown {
+    border-top: 2px solid #972525;
+    background-color: #972525;
+    display: none;
+
+    li {
+      border-bottom: 1px solid $red;
+
+      a {
+        padding: 1em 1.5em;
+
+        &:hover {
+          color: $black;
+          padding: 1em 1.2em 1em 2em;
+        }
+      }
+    }
+  }
+}

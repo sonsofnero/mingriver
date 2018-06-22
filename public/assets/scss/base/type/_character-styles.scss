@@ -1,0 +1,200 @@
+// Global Fonts
+//////////////////////////////
+
+html {
+  font-size: 62.5%; // 1rem
+}
+
+body {
+  font-family: $default-font-stack;
+  font-weight: 100;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: $black;
+  font-size: 1.875rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.h1 {
+  display: block;
+  font-size: 6rem;
+  line-height: 1;
+
+  &--serif {
+    @include body-bold;
+  }
+
+  &--sans {
+    @include body-bold;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 1450px) {
+    font-size: 7rem;
+  }
+  @media (max-width: $screen-md) {
+    font-size: 4.25rem;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 3rem;
+  }
+}
+
+.h2 {
+  @include body-bold;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  @media screen and (max-width: 900px) {
+    font-size: 10rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 7rem;
+  }
+}
+
+.h3 {
+  @include body-bold;
+  font-size: 3rem;
+}
+
+.h4 {
+  @include body-bold;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    line-height: 1.15em;
+  }
+}
+
+.h5 {
+  @include body-bold;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.h6 {
+  @include body-medium;
+  font-size: 1.5em;
+}
+
+.lg-title {
+  @include body-medium;
+  font-size: 3em;
+  line-height: 1;
+  @media (max-width: $screen-sm) {
+    font-size: 2.5em;
+  }
+}
+
+.md-title {
+  @include body-medium;
+  font-size: 2em;
+}
+
+.sm-title {
+  @include body-medium;
+  font-size: 1em;
+}
+
+.p-sma {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.p-med {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.text--hairline {
+  font-weight: 100;
+}
+
+.text--thin {
+  font-weight: 200;
+}
+
+.text--light {
+  font-weight: 300;
+}
+
+.text--medium {
+  font-weight: 500;
+}
+
+.text--semibold {
+  font-weight: 600;
+}
+
+.text--bold,
+b,
+strong {
+  font-weight: 700;
+}
+
+.text--heavy {
+  font-weight: 800;
+}
+
+.text--black {
+  font-weight: 900;
+}
+
+blockquote {
+  @include body-bold;
+  font-size: 5rem;
+  line-height: 1.25;
+  @media (max-width: $screen-md) {
+    font-size: 4rem;
+    margin-bottom: 1em;
+  }
+  @media (max-width: $screen-sm) {
+    font-size: 3rem;
+  }
+}
+
+figcaption {
+  display: inline-block;
+  @include dosis-medium;
+  color: $white;
+  padding: .25em 1em .35em 1.25em;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  z-index: 0;
+  &:before {
+    content: 'Image By: ';
+  }
+
+  &:after {
+    content: '';
+    background: rgba(25,47,55,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}

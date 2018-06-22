@@ -1,0 +1,290 @@
+/* ================================================================================ */
+/* UTILITIES */
+/* ================================================================================ */
+.centerizer {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	position: relative;
+	max-width: $screen-lg;
+	padding: 0 1em;
+	z-index: 1;
+	@media (max-width: $screen-md) {
+		max-width: $screen-md;
+	}
+	@media (max-width: $screen-sm) {
+		max-width: $screen-sm;
+	}
+	@media (max-width: $screen-xs) {
+		max-width: $screen-xs;
+	}
+	@media (max-width: 320px) {
+		max-width: 320px;
+	}
+}
+
+.inline-cols {
+	padding-left: 0;
+	display: block;
+	clear: both;
+
+	.col-lg-1,
+	.col-lg-10,
+	.col-lg-11,
+	.col-lg-12,
+	.col-lg-2,
+	.col-lg-3,
+	.col-lg-4,
+	.col-lg-5,
+	.col-lg-6,
+	.col-lg-7,
+	.col-lg-8,
+	.col-lg-9,
+	.col-md-1,
+	.col-md-10,
+	.col-md-11,
+	.col-md-12,
+	.col-md-2,
+	.col-md-3,
+	.col-md-4,
+	.col-md-5,
+	.col-md-6,
+	.col-md-7,
+	.col-md-8,
+	.col-md-9,
+	.col-sm-1,
+	.col-sm-10,
+	.col-sm-11,
+	.col-sm-12,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-sm-7,
+	.col-sm-8,
+	.col-sm-9,
+	.col-xs-1,
+	.col-xs-10,
+	.col-xs-11,
+	.col-xs-12,
+	.col-xs-2,
+	.col-xs-3,
+	.col-xs-4,
+	.col-xs-5,
+	.col-xs-6,
+	.col-xs-7,
+	.col-xs-8,
+	.col-xs-9 {
+		float: none;
+		display: inline-block;
+		margin: 0 -0.20em;
+		vertical-align: top;
+	}
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.pull-right {
+	float: right !important;
+}
+
+.break {
+	display: block;
+	clear: both;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+*:first-child+html .clearfix {
+	zoom: 1;
+}
+/* CLEARFIX IE7 */
+// Bootstrap Clearfix, sometimes necessary
+.cf:after,
+.cf:before {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+	*zoom: 1;
+}
+
+.img-responsive {
+	@include img-responsive;
+}
+// Padding / Spacing
+// -------------------------
+
+.vert-pad-1 {
+	padding: 1em 0;
+}
+
+.vert-pad-2 {
+	padding: 2em 0;
+}
+
+.vert-pad-3 {
+	padding: 3em 0;
+}
+
+.vert-pad-4 {
+	padding: 4em 0;
+}
+
+.vert-pad-5 {
+	padding: 5em 0;
+}
+
+.push-down-05 {
+	margin-bottom: 0.5em;
+}
+
+.push-down-1 {
+	margin-bottom: 1em;
+}
+
+.push-down-2 {
+	margin-bottom: 2em;
+}
+
+.push-down-3 {
+	margin-bottom: 3em;
+}
+
+.push-down-4 {
+	margin-bottom: 4em;
+}
+
+.push-down-5 {
+	margin-bottom: 5em;
+}
+@media (max-width: $screen-sm) {
+	.vert-pad-4 {
+		padding: 3em 0;
+	}
+
+	.vert-pad-5 {
+		padding: 3.5em 0;
+	}
+
+	.push-down-1 {
+		margin-bottom: 0.5em;
+	}
+
+	.push-down-2 {
+		margin-bottom: 2em;
+	}
+
+	.push-down-3 {
+		margin-bottom: 1.5em;
+	}
+
+	.push-down-4 {
+		margin-bottom: 2em;
+	}
+
+	.push-down-5 {
+		margin-bottom: 2.5em;
+	}
+}
+@media (max-width: $screen-xs) {
+	.vert-pad-3 {
+		padding: 2.2em 0;
+	}
+}
+// Columns
+// -------------------------
+
+.two-col {
+	-webkit-column-count: 2;
+	-webkit-column-gap: 10px;
+	-moz-column-count: 2;
+	-moz-column-gap: 10px;
+	column-count: 2;
+	column-gap: 10px;
+}
+
+.four-col {
+	-webkit-column-count: 4;
+	-webkit-column-gap: 10px;
+	-moz-column-count: 4;
+	-moz-column-gap: 10px;
+	column-count: 4;
+	column-gap: 10px;
+	@media (max-width: 600px) {
+		-webkit-column-count: 3;
+		-webkit-column-gap: 10px;
+		-moz-column-count: 3;
+		-moz-column-gap: 10px;
+		column-count: 3;
+		column-gap: 10px;
+	}
+	@media (max-width: 480px) {
+		-webkit-column-count: 2;
+		-webkit-column-gap: 10px;
+		-moz-column-count: 2;
+		-moz-column-gap: 10px;
+		column-count: 2;
+		column-gap: 10px;
+	}
+}
+// Text Alignment
+// -------------------------
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+// Toggling content
+// -------------------------
+
+.hide {
+	display: none !important;
+}
+
+.show {
+	display: block !important;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.text-hide {
+	font: #{0/0} a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+}

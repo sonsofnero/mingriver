@@ -1,0 +1,109 @@
+.mailinglist-container {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 4em 2em;
+  color: $white;
+  margin-bottom: 3.5em;
+  font-size: 2rem;
+  background-color: #14242A;
+  z-index: 1;
+  &:after {
+    content: '';
+    background-image: url("../assets/jpg/water-pattern.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: .2;
+  }
+  .flex-item:first-child {
+    padding-right: 1em;
+  }
+
+  .h5 {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 0.25em;
+  }
+
+  p {
+    font-size: 1.85rem;
+    line-height: 1;
+  }
+
+  .mc-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    @media (max-width: $screen-xs) {
+      display: block;
+    }
+  }
+
+  input {
+    border: none;
+    background-color: $white;
+    margin-right: 0.5em;
+    height: 56px;
+    border-radius: 5px;
+    &.email {
+      width: 65%;
+      padding: 1em;
+      @media (max-width: $screen-xs) {
+        width: 100%;
+        margin-bottom: .5em;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .button {
+    @include body-bold;
+    text-transform: uppercase;
+    border: none;
+    background: $red;
+    color: $white;
+    line-height: 1;
+    font-size: 0.85em;
+    padding: 0.5em 1em;
+    -webkit-appearance: none;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $green;
+      color: $black;
+    }
+
+    @media (max-width: $screen-xs) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 850px) {
+    .flex-row {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .flex-item {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 1em;
+        padding-right: 0;
+      }
+    }
+
+    .mc-container {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 450px) {
+    padding: 3em 0;
+  }
+}

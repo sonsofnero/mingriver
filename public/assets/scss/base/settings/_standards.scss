@@ -1,0 +1,62 @@
+::-moz-selection {
+	background: $red;
+	color: white;
+	text-shadow: none;
+}
+
+::selection {
+	background: $red;
+	color: white;
+	text-shadow: none;
+}
+
+a {
+	transition: all 0.3s ease;
+	color: $red;
+	cursor: pointer;
+}
+
+p,
+span {
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+fieldset,
+form {
+	margin: 0;
+	border: 0;
+}
+
+button {
+	&:focus {
+		outline: none;
+	}
+}
+
+p {
+	line-height: 1.75em;
+	margin-bottom: 1em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+hr {
+	display: inline-block;
+	width: 100%;
+	border: none;
+	height: 1px;
+	background-color: #BBBBBB;
+	margin: 2em auto;
+	clear: both;
+
+	&.divider-sm {
+		margin: 0 auto 1.45em;
+		width: 88px;
+		height: 4px;
+		background-color: $black;
+	}
+}

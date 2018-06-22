@@ -1,0 +1,107 @@
+$background: #e74c3c;
+$select-color: #fff;
+$select-background: #c0392b;
+$select-width: auto;
+$select-height: auto;
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  position: relative;
+  font-size: 1em;
+  width: $select-width;
+  height: $select-height;
+  text-transform: uppercase;
+  color: $black;
+  display: inline-block;
+}
+
+.postform {
+  transition: all 0.2s ease-in;
+  text-align: left;
+  padding: 0 0.5em;
+  display: flex;
+
+  &:after {
+    content: "\e908";
+    font-family: 'icomoon';
+    font-size: 8px;
+    position: relative;
+    display: block;
+    transition: all 0.15s ease-in;
+    color: $red;
+    right: -10px;
+  }
+
+  &:hover {
+    color: $red;
+
+    &:after {
+      color: $grey;
+    }
+  }
+
+  &.active,
+  &:active {
+    color: $red;
+
+    &:after {
+      transform: translateY(-7%) rotate(180deg);
+    }
+
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $white;
+  background-color: #fff;
+  width: 100%;
+  min-width: 200px;
+  border-top: 4px solid $red;
+
+  li {
+    margin: 0;
+    padding: 1em 0;
+    text-indent: 15px;
+    border-bottom: 1px solid #C3C2BD;
+    transition: all 0.15s ease-in;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+    height: auto !important;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:hover {
+      color: $red;
+      background: darken($white, 9);
+    }
+
+    &[rel="hide"] {
+      display: none;
+    }
+  }
+}
+
+.postform.select-hidden {
+    display:none;
+}

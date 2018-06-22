@@ -1,0 +1,160 @@
+// Backgrounds
+//---------------------------//
+
+body {
+	background-color: $white;
+}
+
+%bg-cover {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-ms-behavior: url("js/compat/backgroundsize.min.htc");
+	/* IE 8 Fix */
+}
+
+@mixin bg-cover {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-ms-behavior: url("js/compat/backgroundsize.min.htc");
+	/* IE 8 Fix */
+}
+
+.bg-cover {
+	@include bg-cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.bg-bottom {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-size: auto;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+
+.bg-image {
+	width: 100%;
+	display: block;
+
+	&__opacity-08 {
+		opacity: 0.8;
+	}
+
+	&__opacity-06 {
+		opacity: 0.6;
+	}
+
+	&__opacity-05 {
+		opacity: 0.5;
+	}
+
+	&__opacity-04 {
+		opacity: 0.4;
+	}
+
+	&__opacity-03 {
+		opacity: 0.3;
+	}
+
+	&__opacity-02 {
+		opacity: 0.2;
+	}
+
+	&__opacity-01 {
+		opacity: 0.1;
+	}
+}
+
+.bg-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	@extend %bg-cover;
+	z-index: 0;
+	transition: all 0.3s ease;
+}
+
+.bg-bottom {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	transition: all 0.3s ease;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+
+.bg-gradient {
+	&:before {
+		display: block;
+		position: absolute;
+		background-image: linear-gradient(to bottom, transparent 0%, black 100%);
+		bottom: 0;
+		height: 500px;
+		width: 100%;
+		content: '';
+	}
+}
+
+.bg-gradient--top {
+	&:before {
+		display: block;
+		position: absolute;
+		height: 500px;
+		width: 100%;
+		background-image: linear-gradient(#F9F9F9, transparent);
+		content: '';
+	}
+}
+
+%dark-bg {
+	background-color: $black;
+}
+
+.dark-bg {
+	@extend %dark-bg;
+}
+
+.light-bg {
+	background-color: #F9F9F9;
+}
+
+.bg-fade {
+	position: fixed;
+	z-index: 19;
+	width: 100%;
+	height: 100%;
+	background-color: $black;
+	opacity: .9;
+	top: 0;
+	left: 0;
+	transition: all 0 ease-in;
+	transform: translateX(-100%);
+	&__on {
+		opacity: .9;
+		transform: translateX(0%);
+	}
+}
+
+.hero-storyof .bg-image {
+	background-position: top center !important;
+	opacity: 1 !important;
+	@media screen and (max-width: 768px) {
+    height: 500px;
+  }
+  @media screen and (max-width: 550px) {
+    height: 300px;
+  }
+}

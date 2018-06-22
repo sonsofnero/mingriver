@@ -1,0 +1,247 @@
+.underline-btn {
+  @include body-bold;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease;
+
+  &:after {
+    content: '';
+    width: 45%;
+    height: 4px;
+    background-color: $green;
+    display: block;
+    transition: all 0.3s ease;
+    margin-top: 0.25em;
+  }
+
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+.arrow-btn {
+  @include body-bold;
+  text-transform: uppercase;
+  display: inline-block;
+  color: $white;
+  padding: 0.85em 3em 0.85em 1.25em;
+  font-size: 0.95em;
+  position: relative;
+
+  &--red {
+    background-color: $red;
+
+    &:hover {
+      background-color: $green;
+    }
+  }
+
+  &:after {
+    content: "\e902";
+    font-family: 'icomoon';
+    font-size: 1em;
+    color: $black;
+    font-size: 0.85em;
+    padding-left: 0.85em;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: absolute;
+  }
+
+  &:hover:after {
+    animation: dribbleRight 1s infinite;
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.solid-btn {
+  @include body-bold;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease;
+  padding: 1em 1.5em .85em;
+  font-size: 0.9em;
+  border-radius: 5px;
+  &--black {
+    background-color: $black;
+    color: $white;
+
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+  }
+  &--red {
+    background-color: $red;
+    color: $white;
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
+  }
+}
+
+.more-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.outline-btn {
+  @include body-bold;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: all 0.3s ease;
+  padding: 1em 1.5em;
+  background-color: $white;
+  border: 2px solid $red;
+  color: $red;
+  font-size: 0.9em;
+
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+}
+//Toggle Switch
+.toggle-switch {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .label {
+    @include body-bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    margin: 0 1em;
+  }
+
+  .switch input {
+    display: none;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: $red;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+  }
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+#hamburger {
+  width: 30px;
+  height: 22px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+  }
+
+  span {
+    display: block;
+    position: relative;
+    height: 4px;
+    width: 30px;
+    background: $white;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+
+    &:nth-child(1) {
+      top: 0;
+      transform-origin: left center;
+    }
+
+    &:nth-child(2) {
+      top: 5px;
+      transform-origin: left center;
+    }
+
+    &:nth-child(3) {
+      top: 10px;
+      transform-origin: left center;
+    }
+  }
+
+  &.open {
+    &:after {
+      color: $white;
+    }
+
+    span:nth-child(1) {
+      transform: rotate(45deg);
+      top: -1px;
+      left: 5px;
+    }
+
+    span:nth-child(2) {
+      width: 0;
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 13px;
+      left: 5px;
+    }
+  }
+}

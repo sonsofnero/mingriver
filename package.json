@@ -1,0 +1,34 @@
+{
+  "name": "vionlabs",
+  "version": "1.0.0",
+  "description": "Ming River Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Forefathers Group",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonsofnero/mingriver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sonsofnero/mingriver/issues"
+  },
+  "homepage": "https://github.com/sonsofnero/mingriver#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "postcss-scss": "^1.0.4"
+  },
+  "dependencies": {
+    "static-server": "^2.2.0"
+  }
+}

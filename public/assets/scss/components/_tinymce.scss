@@ -1,0 +1,225 @@
+.tinymce {
+  display: block;
+  position: relative;
+  line-height: 1.5;
+  /*********************
+  LINK STYLES
+  *********************/
+  a {
+    color: $red;
+  }
+
+  a,
+  a:visited {
+    /* on hover */
+    &:focus,
+    &:hover {}
+    /* on click */
+    &:active {}
+
+    &:link {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+  /******************************************************************
+  H1, H2, H3, H4, H5 STYLES
+  ******************************************************************/
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-rendering: optimizelegibility;
+    font-size: 2.4rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  h1 {
+    @include body-bold;
+    font-size: 5.5rem;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    @include body-medium;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    @include body-bold;
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    @include body-medium;
+    font-size: 2.25em;
+    margin-bottom: 0.75em;
+  }
+
+  h5 {
+    @include body-bold;
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+  }
+
+  h6 {
+    @include body-medium;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin: 0 0 1.5em;
+    font-size: 2.25rem;
+    line-height: 1.75em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 900px) {
+      font-size: 1.85rem;
+      line-height: 1.5;
+    }
+  }
+
+  strong {
+    font-weight: 900;
+  }
+
+
+  ol,
+  ul {
+
+    li {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    border: 1px solid #858585;
+    margin-bottom: 1.5em;
+
+    caption {
+      margin: 0 0 7px;
+      font-size: 0.75em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid #858585;
+
+    &:nth-child(even) {
+      background-color: #858585;
+    }
+  }
+
+  td {
+    padding: 7px;
+    border-right: 1px solid #858585;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  th {
+    background-color: #858585;
+    border-bottom: 1px solid #858585;
+    border-right: 1px solid #858585;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  blockquote {
+    display: block;
+    margin: 4em 0 6em;
+    text-align: center;
+    @media screen and (max-width: 550px) {
+      margin: 2em 0;
+    }
+
+    p {
+      font-size: 4.2rem;
+      line-height: 1.75em;
+      font-weight: 400;
+      @media screen and (max-width: 900px) {
+        font-size: 3rem;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 30%;
+      margin: 0 auto 2em;
+      height: 6px;
+      background-color: black;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 30%;
+      margin: 2em auto 0;
+      height: 6px;
+      background-color: black;
+    }
+  }
+
+  dd {
+    font-size: 0.9em;
+    color: #787878;
+    margin-bottom: 1.5em;
+  }
+
+  img {
+    margin: 0 0 1.5em;
+    max-width: 100%;
+    height: auto;
+  }
+
+  pre {
+    background: #000;
+    color: #858585;
+    font-size: 0.9em;
+    padding: 1.5em;
+    margin: 0 0 1.5em;
+    border-radius: 3px;
+  }
+
+  ol,
+  ul {
+    margin-bottom: 2em;
+
+    li {
+      font-size: 2.25rem;
+      @media screen and (max-width: 900px) {
+        font-size: 1.85rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}

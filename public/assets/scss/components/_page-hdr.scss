@@ -1,0 +1,81 @@
+.page-hdr {
+  display: block;
+  width: 100%;
+  position: relative;
+  padding: 1em 0;
+  border-top: 1px solid #BBBBBB;
+  border-bottom: 1px solid #BBBBBB;
+  z-index: 0;
+
+  .h1 {
+    margin-right: 0.75em;
+    white-space: nowrap;
+    @include icomoon("character-1", "before", false);
+
+    &:before {
+      color: $red;
+      margin-right: 0.25em;
+    }
+    @media (max-width: 1050px) {
+      font-size: 5rem;
+    }
+    @media (max-width: $screen-sm) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__sm-pad {
+    padding: 0.25em 0;
+  }
+
+  .flex-row {
+    @media (max-width: $screen-sm) {
+      flex-wrap: wrap;
+      .h1 {
+        margin-bottom: .25em;
+        white-space: normal;
+        word-break: break-word;
+      }
+    }
+  }
+}
+
+.breadcrumb {
+  display: block;
+  padding: .7em 0 .5em 0;
+  border-bottom: 1px solid #BAC3C2;
+  width: 100%;
+}
+.breadcrumb-list {
+  display: block;
+  list-style: none;
+
+  &__pad {
+    padding: 0 6em;
+  }
+
+  li {
+    display: inline-block;
+    @include body-medium;
+    color: #869AA1;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+
+    &:after {
+      content: '|';
+      color: #BAC3C2;
+      padding: 0 0.75em 0 0.9em;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+
+    a {
+      color: $black;
+      &:hover {
+        color: #869AA1;
+      }
+    }
+  }
+}

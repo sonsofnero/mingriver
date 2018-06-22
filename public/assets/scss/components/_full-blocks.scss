@@ -1,0 +1,40 @@
+.full-block {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+
+  .content-block {
+    display: block;
+    position: absolute;
+    background: $red;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 2em 3em;
+    color: $white;
+    transition: all 0.3s ease;
+
+    .h1 {
+      font-size: 2.5em;
+    }
+    @media (max-width: $screen-md) {
+      .h1 {
+        font-size: 1.5em;
+      }
+    }
+
+    .underline-btn {
+      color: $white;
+    }
+
+    &:hover {
+      background: $black;
+      padding: 2em 3em 2em 3.75em;
+
+      .underline-btn:after {
+        width: 100%;
+      }
+    }
+  }
+}
