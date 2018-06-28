@@ -53,10 +53,10 @@ include('components/header.php');
 
 
 <!--Start: Page Header-->
-<section class="page-hdr">
+<section class="page-hdr clearfix">
 	<div class="centerizer">
 
-    <h2 class="h2">Articles</h2>
+    <h2 class="h2">Press</h2>
 
     <ul class="filter-select">
       <li>Filter By:</li>
@@ -82,22 +82,24 @@ include('components/header.php');
 <section>
 	<div class="centerizer">
 
-		<div class="grid-row grid-row__2block grid-row__lgFirst push-down-2">
+		<div class="grid-row grid-row__2block push-down-2">
 
       <div class="grid-item">
+        <a href="" class="category-tag">Articles</a>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
 				</div>
-        <img src="assets/placeholders/small-article-img1.png">
+        <img class="article-img" src="assets/placeholders/small-article-img1.png">
 			</div>
 
       <div class="grid-item">
+        <a href="" class="category-tag">Articles</a>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
 				</div>
-        <img src="assets/placeholders/small-article-img1.png">
+        <img class="article-img" src="assets/placeholders/small-article-img1.png">
 			</div>
 
 		</div>
@@ -110,7 +112,7 @@ include('components/header.php');
 <section>
 	<div class="centerizer">
 
-		<div class="grid-row grid-row__3block">
+		<div class="grid-row grid-row__3block push-down-2">
 
       <div class="grid-item">
 				<div class="content-block">
@@ -242,11 +244,11 @@ include('components/header.php');
         <img src="assets/placeholders/small-article-img1.png">
 			</div>
 
-      <div class="more-btn">
-        <a href="" class="solid-btn solid-btn--red">View More</a>
-      </div>
-
 		</div>
+
+    <div class="more-btn">
+      <a href="" class="solid-btn solid-btn--red">View More</a>
+    </div>
 
 	</div>
 </section>

@@ -138,26 +138,26 @@ $(document).ready(function(){
 });
 
 
-$('.slider').slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 850,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 650,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-      }
-    }
-  ]
-});
+// $('.slider').slick({
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 3,
+//   responsive: [
+//     {
+//       breakpoint: 850,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 2,
+//         infinite: true,
+//       }
+//     },
+//     {
+//       breakpoint: 650,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         infinite: true,
+//       }
+//     }
+//   ]
+// });

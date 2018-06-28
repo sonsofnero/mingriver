@@ -118,6 +118,13 @@ h6 {
   font-size: 1em;
 }
 
+.sm-header {
+  @include body-bold;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 .p-sma {
   font-size: 0.85rem;
   line-height: 1.6;
