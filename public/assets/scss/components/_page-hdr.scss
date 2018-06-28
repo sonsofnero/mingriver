@@ -3,10 +3,12 @@
   width: 100%;
   position: relative;
   padding: 1em 0;
-  border-top: 1px solid #BBBBBB;
-  border-bottom: 1px solid #BBBBBB;
-  z-index: 0;
+  z-index: 10;
+  margin: 2em 0 1em;
 
+  .flex-container {
+    align-items: center;
+  }
   .h1 {
     margin-right: 0.75em;
     white-space: nowrap;
@@ -22,6 +24,12 @@
     @media (max-width: $screen-sm) {
       font-size: 3.5rem;
     }
+  }
+
+  .h2 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: $green;
   }
 
   &__sm-pad {
@@ -80,7 +88,9 @@
   }
 }
 
+// Press Header Content
 .press-hdr {
+  border-bottom: 1px solid #BBBBBB;
   .flex-row {
     max-width: 80%;
     justify-content: center;
@@ -107,7 +117,6 @@
         display: none;
       }
     }
-
     p {
       font-size: .8em;
     }

@@ -22,7 +22,8 @@ include('components/header.php');
     <h1 class="h1">How to Enjoy Baijiu</h1>
     <p>In China they say, “One cannot set the table without alcohol,” which means it’s not a meal without baijiu. Traditionally baijiu is served neat at room temperature to accompany food at mealtimes. It is poured into tiny, thimble-sized shot glasses that are downed in a series of communal toasts. One always drinks with others, so baijiu is associated with raucous, festive drinking sessions.</p>
 
-    <h2 class="md-hdr">Ming River Mixing Notes</h2>
+    <h2 class="md-header text-center">Ming River Mixing Notes</h2>
+
     <hr>
 
     <div class="mixing-notes">
@@ -60,40 +61,39 @@ include('components/header.php');
 <!--End: 2 Article Square Blocks-->
 
 
-<!--Start: Coctail List-->
-<section class="page-hdr">
+<!--Start: Page Header-->
+<section class="page-hdr clearfix">
 	<div class="centerizer">
 
-    <h2 class="h2">Cocktails</h2>
+    <div class="flex-container">
 
-    <ul class="filter-select">
-      <li>Filter By:</li>
-      <li>
-        <select class="styled-select postform">
-          <option value="featured">Date</option>
-          <option value="featured">Date</option>
-          <option value="featured">Date</option>
-        </select>
-      </li>
-    </ul>
+      <h2 class="h2">Cocktails</h2>
 
-    <ul class="filter-select">
-      <li>Filter By:</li>
-      <li>
-        <select class="styled-select postform">
-          <option value="featured">Date</option>
-          <option value="featured">Date</option>
-          <option value="featured">Date</option>
-        </select>
-      </li>
-    </ul>
+      <ul class="filter-select">
+        <li>Filter By:</li>
+        <li>
+          <select class="styled-select postform">
+            <option value="featured">Date</option>
+            <option value="featured">Date</option>
+            <option value="featured">Date</option>
+          </select>
+        </li>
+      </ul>
 
-    <form class="search-form">
-      <input type="text" placeholder="Search News.." name="search">
-      <button type="submit" class="search-btn"></button>
-    </form>
+      <form class="search-form">
+        <input type="text" placeholder="Search News.." name="search">
+        <button type="submit" class="search-btn"></button>
+      </form>
+
+    </div>
+
+	</div>
+</section>
+<!--End: Page Header-->
 
 
+<section>
+	<div class="centerizer">
 
     <div class="grid-row grid-row__3block">
 

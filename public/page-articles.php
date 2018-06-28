@@ -15,26 +15,28 @@ include('components/header.php');
 <!--End: Breadcrumb-->
 
 <!--Start: Page Header-->
-<section class="page-hdr">
+<section class="page-hdr clearfix">
 	<div class="centerizer">
 
-    <h2 class="h2">Articles</h2>
+    <div class="flex-container">
+      <h2 class="h2">Articles</h2>
 
-    <ul class="filter-select">
-      <li>Filter By:</li>
-      <li>
-        <select class="styled-select postform">
-          <option value="featured">Date</option>
-          <option value="featured">Date</option>
-          <option value="featured">Date</option>
-        </select>
-      </li>
-    </ul>
+      <ul class="filter-select">
+        <li>Filter By:</li>
+        <li>
+          <select class="styled-select postform">
+            <option value="featured">Date</option>
+            <option value="featured">Date</option>
+            <option value="featured">Date</option>
+          </select>
+        </li>
+      </ul>
 
-    <form class="search-form">
-      <input type="text" placeholder="Search News.." name="search">
-      <button type="submit" class="search-btn"></button>
-    </form>
+      <form class="search-form">
+        <input type="text" placeholder="Search News.." name="search">
+        <button type="submit" class="search-btn"></button>
+      </form>
+    </div>
 
 	</div>
 </section>
@@ -64,15 +66,8 @@ include('components/header.php');
 
 		</div>
 
-	</div>
-</section>
-<!--End: 2 Article Square Blocks-->
 
-<!--Start: 3 Article Blocks-->
-<section>
-	<div class="centerizer">
-
-		<div class="grid-row grid-row__3block">
+    <div class="grid-row grid-row__3block push-down-2">
 
       <div class="grid-item">
 				<div class="content-block">
@@ -97,15 +92,8 @@ include('components/header.php');
 
 		</div>
 
-	</div>
-</section>
-<!--End: 3 Article Blocks-->
 
-<!--Start: 2 Article Square Blocks-->
-<section>
-	<div class="centerizer">
-
-		<div class="grid-row grid-row__2block grid-row__lgFirst push-down-2">
+    <div class="grid-row grid-row__2block grid-row__lgFirst push-down-2">
 
       <div class="grid-item">
 				<div class="content-block">
@@ -125,9 +113,12 @@ include('components/header.php');
 
 		</div>
 
+
 	</div>
 </section>
 <!--End: 2 Article Square Blocks-->
+
+
 
 
 <!--Start: Mailing List-->
@@ -204,11 +195,11 @@ include('components/header.php');
         <img src="assets/placeholders/small-article-img1.png">
 			</div>
 
-      <div class="more-btn">
-        <a href="" class="solid-btn solid-btn--red">View More</a>
-      </div>
-
 		</div>
+
+    <div class="more-btn">
+      <a href="" class="solid-btn solid-btn--red">View More</a>
+    </div>
 
 	</div>
 </section>

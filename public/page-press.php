@@ -56,23 +56,27 @@ include('components/header.php');
 <section class="page-hdr clearfix">
 	<div class="centerizer">
 
-    <h2 class="h2">Press</h2>
+    <div class="flex-container">
 
-    <ul class="filter-select">
-      <li>Filter By:</li>
-      <li>
-        <select class="styled-select postform">
-          <option value="featured">Date</option>
-          <option value="featured">Date</option>
-          <option value="featured">Date</option>
-        </select>
-      </li>
-    </ul>
+      <h2 class="h2">Press</h2>
 
-    <form class="search-form">
-      <input type="text" placeholder="Search News.." name="search">
-      <button type="submit" class="search-btn"></button>
-    </form>
+      <ul class="filter-select">
+        <li>Filter By:</li>
+        <li>
+          <select class="styled-select postform">
+            <option value="featured">Date</option>
+            <option value="featured">Date</option>
+            <option value="featured">Date</option>
+          </select>
+        </li>
+      </ul>
+
+      <form class="search-form">
+        <input type="text" placeholder="Search News.." name="search">
+        <button type="submit" class="search-btn"></button>
+      </form>
+
+    </div>
 
 	</div>
 </section>

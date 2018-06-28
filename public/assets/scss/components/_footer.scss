@@ -157,6 +157,7 @@ footer {
         margin-bottom: 2em;
         li {
           display: inline-block;
+          margin-right: .5em;
         }
       }
       a {
@@ -174,19 +175,6 @@ footer {
 
       a.search {
         @include icomoon("search", "after", false);
-      }
-      @media (max-width: 550px) {
-        display: block;
-        text-align: center;
-
-        li {
-          display: block;
-
-          a {
-            padding: 0.5em 0;
-            display: block;
-          }
-        }
       }
     }
 

@@ -118,6 +118,12 @@ h6 {
   font-size: 1em;
 }
 
+.md-header {
+  @include body-medium;
+  font-size: 1.5em;
+  color: $red;
+}
+
 .sm-header {
   @include body-bold;
   font-size: .8em;
@@ -186,10 +192,11 @@ figcaption {
   display: inline-block;
   @include dosis-medium;
   color: $white;
-  padding: .25em 1em .35em 1.25em;
+  padding: .5em 1em .5em 1.25em;
   font-size: 0.7em;
   text-transform: uppercase;
   z-index: 0;
+  line-height: 1.5;
   &:before {
     content: 'Image By: ';
   }

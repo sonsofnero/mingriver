@@ -173,7 +173,6 @@
   font-size: 0.75em;
   display: flex;
   float: left;
-  margin-top: .75em;
 
   li {
     display: block;
@@ -223,6 +222,7 @@
     border: none;
     border: 1px solid $grey;
     padding: 0.5em 0.75em 0.75em;
+    background: transparent;
   }
 
   .search-btn {
@@ -448,7 +448,7 @@
     padding-left: 50px;
     margin-bottom: 1em;
     line-height: 1;
-    padding-top: 7px;
+    padding-top: 10px;
     font-weight: 400;
 
     &:after {
@@ -480,11 +480,11 @@
   }
 
   .table {
-    padding: 1em;
-    border: 1px solid #DEDEDE;
-    border-radius: 5px;
+    padding: 1.5em;
+    border: 1px solid $black;
+    border-radius: 10px;
     width: 100%;
-    .h3 {
+    .h4 {
       display: block;
       margin-bottom: .5em;
     }
@@ -503,10 +503,10 @@
         &:before {
           content: '•';
           font-weight: 500;
-          font-size: 2em;
+          font-size: 1em;
           position: absolute;
           left: 0;
-          top: -4px;
+          top: 0px;
           color: $red;
         }
       }
@@ -527,6 +527,12 @@
         @include dosis-bold;
       }
     }
+  }
+
+  .h3 {
+    display: block;
+    margin-bottom: .75em;
+    text-transform: uppercase;
   }
 }
 
@@ -627,7 +633,7 @@
 .inner-share {
   position: absolute;
   top: 0;
-  left: -5em;
+  left: 4em;
   list-style: none;
   text-align: center;
   li {
@@ -975,6 +981,16 @@
     }
   }
 
+  .mixing-desc {
+    .h3 {
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
   @media (max-width: $screen-sm) {
     flex-wrap: wrap;
     margin-bottom: 2em;
@@ -990,11 +1006,13 @@
   }
 }
 
-.mixing-desc .h3 {
-  display: block;
-  margin-bottom: 10px;
+.more-articles {
+  margin-bottom: 3em;
+  .h4 {
+    display: block;
+    margin-bottom: .5em;
+  }
 }
-
 
 
 
@@ -1007,7 +1025,16 @@
     color: $white;
     font-size: 5rem;
     line-height: 1.25;
-    margin-bottom: 0;
     text-align: center;
+    max-width: 1020px;
+    margin: 0px auto 0px;
+  }
+}
+
+.quote {
+  text-align: center;
+  blockquote {
+    display: block;
+    margin-bottom: .5em;
   }
 }

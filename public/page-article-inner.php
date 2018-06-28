@@ -16,7 +16,7 @@ include('components/header.php');
 <!--End: Breadcrumb-->
 
 
-<section class="post-body post-body__pad post-body__bot-bdr">
+<section class="post-body post-body__pad-top">
   <div class="centerizer">
 
     <!--Start: Article Header-->
@@ -44,8 +44,6 @@ include('components/header.php');
       </ul>
     </div>
     <!--End: Article Header-->
-
-
 
 
     <div class="article-start text-block text-block__pad">
@@ -132,6 +130,11 @@ include('components/header.php');
 
   </div>
 </section>
+
+
+<!--divider-->
+<hr>
+<!--/divider-->
 
 <section class="more-articles">
   <div class="centerizer">

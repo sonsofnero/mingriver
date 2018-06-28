@@ -15,8 +15,8 @@ include('components/header.php');
 <!--End: Breadcrumb-->
 
 
-<section class="post-body post-body__pad">
-  <div class="centerizer text-block text-block__pad">
+<section>
+  <div class="centerizer post-body post-body__pad">
 
     <!--Start: Article Header-->
     <div class="article-hdr">
