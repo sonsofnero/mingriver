@@ -1,5 +1,5 @@
 <header>
-	<!-- <div class="top-bar">
+	<div class="top-bar">
 		<a href="#" class="mobile-nav-btn">
 		  <div id="hamburger">
 		    <span></span>
@@ -37,7 +37,7 @@
 			<span class="sb-icon-search"><i class="search"></i></span>
 			<input class="sb-search-input sb-search-input--mobile" onkeyup="buttonUp();" placeholder="Enter your search term..."  type="search" value="" name="search" id="search">
 		</form>
-	</div> -->
+	</div>
 
 	<div class="centerizer">
 
@@ -62,14 +62,13 @@
 	<nav class="nav-header">
 		<div class="centerizer">
 			<ul class="nav-list">
-				<li class="sub-menu"><a href="#">About Us</a>
+				<li class="sub-menu"><a href="#">About Baijiu</a>
 					<ul class="desk-drop">
 						<li><a href="#">Page 1</a></li>
 						<li><a href="#">Page 2</a></li>
 						<li><a href="#">Page 3</a></li>
 					</ul>
 				</li>
-				<li><a href="">About Baijiu</a></li>
 				<li><a href="">Articles</a></li>
 				<li><a href="">How To Enjoy</a></li>
 				<li><a href="">Events</a></li>

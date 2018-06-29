@@ -8,14 +8,15 @@ header {
   background: -webkit-linear-gradient(top, rgba(212,227,225,1) 0%,rgba(252,236,221,1) 76%,rgba(252,236,221,1) 100%);
   background: linear-gradient(to bottom, rgba(212,227,225,1) 0%,rgba(252,236,221,1) 76%,rgba(252,236,221,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e3e1', endColorstr='#fcecdd',GradientType=0 );
+  z-index: 11;
 }
 
 //Top Red Bar
 .top-bar {
-  background: $red;
+  background: $mint;
   width: 100%;
   height: 35px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 0.35em 1em;
@@ -36,6 +37,10 @@ header {
     @media (max-width: $screen-sm) {
       display: none;
     }
+  }
+
+  .search {
+    text-shadow: none;
   }
 }
 
@@ -87,6 +92,12 @@ header {
   background-size: 53px 21px;
   bottom: 35%;
   left: 75%;
+  @media (max-width: 1000px) {
+    left: 85%;
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 .hdr-bird2 {
@@ -98,6 +109,12 @@ header {
   background-size: 35px 14px;
   bottom: 15%;
   left: 25%;
+  @media (max-width: 1000px) {
+    left: 5%;
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
 }
 
 
@@ -219,8 +236,9 @@ ul.language {
       &:hover {
         color: $mint;
       }
-      @media (max-width: 1080px) {
+      @media (max-width: 1190px) {
         font-size: 0.8em;
+        padding: 1.1em .5em 1em .5em;
       }
     }
 
@@ -290,12 +308,12 @@ ul.language {
 .nav-mobile {
   position: relative;
   width: 100%;
-  top: 0;
+  top: -2px;
   left: 0;
   padding: 0;
-  background-color: $red;
+  background-color: $mint;
   z-index: 3;
-  border-top: 2px solid #972525;
+  border-top: 2px solid #799d99;
   display: none;
 
   > ul {
@@ -305,7 +323,7 @@ ul.language {
     li {
       position: relative;
       display: block;
-      border-bottom: 2px solid #972525;
+      border-bottom: 2px solid #799d99;
 
       &.active > a {
         color: $black;
@@ -380,12 +398,12 @@ ul.language {
   }
 
   .nav-dropdown {
-    border-top: 2px solid #972525;
-    background-color: #972525;
+
+    background-color: #799d99;
     display: none;
 
     li {
-      border-bottom: 1px solid $red;
+      border-bottom: 1px solid #60807d;
 
       a {
         padding: 1em 1.5em;
@@ -416,11 +434,12 @@ ul.language {
 
 .search {
   @include icomoon("search", "after", false);
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
 .sb-search {
   position: absolute;
-  top: 15px;
+  top: 17px;
   right: 0;
   width: 0%;
   min-width: 50px;
@@ -431,6 +450,9 @@ ul.language {
   -moz-transition: width 0.3s;
   transition: width 0.3s;
   -webkit-backface-visibility: hidden;
+  @media (max-width: 1190px) {
+    top: 14px;
+  }
 
   &--mobile {
     display: none;
@@ -449,18 +471,17 @@ ul.language {
 .sb-search-input {
   position: absolute;
   top: 0;
-  right: 0px;
+  right: 50px;
   border: none;
   outline: none;
-  background: #fff;
-  width: 100%;
+  background: $lt-grey;
+  width: calc(99% - 50px);
   height: 50px;
   margin: 0;
   z-index: 10;
-  padding: 20px 65px 20px 20px;
+  padding: 20px 20px 20px 20px;
   font-family: inherit;
   font-size: 20px;
-  color: #2c3e50;
 }
 
 input[type="search"].sb-search-input {
@@ -533,9 +554,12 @@ input[type="search"].sb-search-input {
 
 .sb-search.sb-search-open .sb-icon-search,
 .no-js .sb-search .sb-icon-search {
-
-    color: $black;
-    z-index: 11;
+  color: $white;
+  z-index: 11;
+  transition: all 0.3s ease;
+  &:hover {
+    color: $mint;
+  }
 }
 
 .sb-search.sb-search-open .sb-search-submit,

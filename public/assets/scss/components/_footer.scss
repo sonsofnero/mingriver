@@ -20,7 +20,7 @@ footer {
   // Footer Flex Container
   .flex-container {
     padding: 3em 0;
-    @media (max-width: 900px) {
+    @media (max-width: 1100px) {
       flex-wrap: wrap;
       .logo-container {
         width: 100%;
@@ -139,6 +139,9 @@ footer {
   .nav-footer {
     display: block;
     position: relative;
+    @media (max-width: 1100px) {
+      margin: 0em auto 2em auto;
+    }
 
     ul {
       list-style: none;
@@ -151,13 +154,17 @@ footer {
         margin-bottom: 5px;
       }
 
-      @media (max-width: 900px) {
+      @media (max-width: 1100px) {
         text-align: center;
         columns: 1;
-        margin-bottom: 2em;
         li {
           display: inline-block;
           margin-right: .5em;
+        }
+      }
+      @media (max-width: $screen-xs) {
+        li {
+          display: block;
         }
       }
       a {
@@ -256,5 +263,8 @@ footer {
   p {
     line-height: 1.5;
     font-size: 1.5rem;
+    @media (max-width: $screen-xs) {
+      font-size: 1.25rem;
+    }
   }
 }

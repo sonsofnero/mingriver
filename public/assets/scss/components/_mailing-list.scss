@@ -73,10 +73,11 @@
     padding: 0.5em 1em;
     -webkit-appearance: none;
     border-radius: 5px;
+    transition: all .3s ease;
 
     &:hover {
-      background-color: $green;
-      color: $black;
+      background-color: $mint;
+      color: $white;
     }
 
     @media (max-width: $screen-xs) {

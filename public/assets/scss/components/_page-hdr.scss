@@ -8,6 +8,9 @@
 
   .flex-container {
     align-items: center;
+    @media (max-width: $screen-sm) {
+      flex-wrap: wrap;
+    }
   }
   .h1 {
     margin-right: 0.75em;
@@ -30,6 +33,11 @@
     font-size: 2em;
     letter-spacing: 2px;
     color: $green;
+    @media (max-width: $screen-sm) {
+      display: block;
+      width: 100%;
+      margin-bottom: .5em;
+    }
   }
 
   &__sm-pad {

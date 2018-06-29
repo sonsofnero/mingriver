@@ -98,10 +98,10 @@ section {
 
   &__3block {
     grid-template-columns: 1fr 1fr 1fr;
-    @media screen and (max-width: $screen-sm) {
+    @media screen and (max-width: $screen-md) {
       grid-template-columns: 1fr 1fr;
     }
-    @media screen and (max-width: $screen-xs) {
+    @media screen and (max-width: $screen-sm) {
       grid-template-columns: 1fr;
     }
   }

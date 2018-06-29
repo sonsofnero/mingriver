@@ -15,8 +15,8 @@ include('components/header.php');
 <!--End: Breadcrumb-->
 
 
-<section>
-  <div class="centerizer post-body post-body__pad">
+<section class="post-body post-body__pad">
+  <div class="centerizer">
 
     <!--Start: Article Header-->
     <div class="article-hdr">
@@ -39,39 +39,43 @@ include('components/header.php');
     <!--End: Article Header-->
 
 
-    <figure class="feature-img">
-      <figcaption>Derek Sandhause</figcaption>
-      <img src="assets/placeholders/event-img.jpg">
-    </figure>
+    <div class="text-block text-block__pad">
 
-    <div class="event-block">
-      <div class="event-block__detail event-block--date">
-        <span class="title">Today at 7pm</span>
-        <span class="desc">Starts in about 7 hours  -  61° Sunny</span>
+      <figure class="feature-img">
+        <figcaption>Derek Sandhause</figcaption>
+        <img src="assets/placeholders/event-img.jpg">
+      </figure>
+
+      <div class="event-block">
+        <div class="event-block__detail event-block--date">
+          <span class="title">Today at 7pm</span>
+          <span class="desc">Starts in about 7 hours  -  61° Sunny</span>
+        </div>
+
+        <div class="event-block__detail event-block--location">
+          <span class="title">Today at 7pm</span>
+          <span class="desc">Starts in about 7 hours  -  61° Sunny</span>
+        </div>
+
+        <div class="event-block__detail event-block--ticket">
+          <span class="desc">Tickets by <a href="">EventBrite</a></span>
+        </div>
       </div>
 
-      <div class="event-block__detail event-block--location">
-        <span class="title">Today at 7pm</span>
-        <span class="desc">Starts in about 7 hours  -  61° Sunny</span>
+      <p><span class="h6">Preamble Heading</span></p>
+
+      <p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted.</p>
+
+      <p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
+
+      <!--divider-->
+      <hr>
+      <!--/divider-->
+
+      <div class="more-btn">
+        <a href="" class="solid-btn solid-btn--red">Back To Articles</a>
       </div>
 
-      <div class="event-block__detail event-block--ticket">
-        <span class="desc">Tickets by <a href="">EventBrite</a></span>
-      </div>
-    </div>
-
-    <p><span class="h6">Preamble Heading</span></p>
-
-    <p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted.</p>
-
-    <p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
-
-    <!--divider-->
-    <hr>
-    <!--/divider-->
-
-    <div class="more-btn">
-      <a href="" class="solid-btn solid-btn--red">Back To Articles</a>
     </div>
 
   </div>

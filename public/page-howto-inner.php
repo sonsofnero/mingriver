@@ -15,8 +15,8 @@ include('components/header.php');
 <!--End: Breadcrumb-->
 
 
-<section>
-  <div class="centerizer post-body">
+<section class="post-body post-body__pad">
+  <div class="centerizer">
 
     <!--Start: Article Header-->
     <div class="article-hdr">
@@ -44,6 +44,7 @@ include('components/header.php');
     </div>
     <!--End: Article Header-->
 
+  <div class="text-block text-block__pad">
 
     <figure class="feature-img">
       <figcaption>Derek Sandhause</figcaption>
@@ -85,6 +86,8 @@ include('components/header.php');
     </div>
     <!--End: Directions -->
 
+  </div>
+  
   </div>
 </section>
 

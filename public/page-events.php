@@ -8,7 +8,7 @@ include('components/header.php');
   <div class="centerizer">
     <ul class="breadcrumb-list">
       <li><a href="">Home</a></li>
-      <li>Articles</li>
+      <li>Events</li>
     </ul>
   </div>
 </section>
@@ -19,7 +19,7 @@ include('components/header.php');
 	<div class="centerizer">
 
     <div class="flex-container">
-      <h2 class="h2">Articles</h2>
+      <h2 class="h2">Events</h2>
 
       <ul class="filter-select">
         <li>Filter By:</li>
@@ -50,6 +50,9 @@ include('components/header.php');
 
       <div class="grid-item">
         <a href="" class="category-tag">Articles</a>
+        <div class="date">
+          <span class="month">Nov</span> 25
+        </div>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
@@ -60,6 +63,9 @@ include('components/header.php');
 
       <div class="grid-item">
         <a href="" class="category-tag">Articles</a>
+        <div class="date">
+          <span class="month">Nov</span> 25
+        </div>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
@@ -75,6 +81,9 @@ include('components/header.php');
 
       <div class="grid-item">
         <a href="" class="category-tag">Articles</a>
+        <div class="date">
+          <span class="month">Nov</span> 25
+        </div>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
 				</div>
@@ -84,6 +93,9 @@ include('components/header.php');
 
       <div class="grid-item">
         <a href="" class="category-tag">Articles</a>
+        <div class="date">
+          <span class="month">Nov</span> 25
+        </div>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
 				</div>
@@ -93,6 +105,9 @@ include('components/header.php');
 
       <div class="grid-item">
         <a href="" class="category-tag">Articles</a>
+        <div class="date">
+          <span class="month">Nov</span> 25
+        </div>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
 				</div>
@@ -107,6 +122,9 @@ include('components/header.php');
 
       <div class="grid-item">
         <a href="" class="category-tag">Articles</a>
+        <div class="date">
+          <span class="month">Nov</span> 25
+        </div>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
@@ -117,6 +135,9 @@ include('components/header.php');
 
       <div class="grid-item">
         <a href="" class="category-tag">Articles</a>
+        <div class="date">
+          <span class="month">Nov</span> 25
+        </div>
 				<div class="content-block">
 					<a href="" class="h4">Beginners Guide to Baijiu</a>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
@@ -145,7 +166,7 @@ include('components/header.php');
 	<div class="centerizer">
 
     <ul class="article-block-hdr">
-			<li><span>More Articles</span></li>
+			<li><span>More Events</span></li>
 		</ul>
 
 		<div class="grid-row grid-row__3block">
