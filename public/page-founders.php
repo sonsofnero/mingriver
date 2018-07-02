@@ -25,58 +25,44 @@ include('components/header.php');
 
       <p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
 
-			<figure class="article-img article-img__sm article-img__left">
-        <figcaption>Derek Sandhause</figcaption>
-        <img src="assets/placeholders/small-article-img1.png">
+    </div>
+
+    <div class="founders-block founders-imgLeft">
+			<figure class="article-img">
+        <img src="assets/placeholders/simon.jpg">
       </figure>
 
-			<p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
+      <div class="founder-desc">
+        <div class="founder-name">
+          <span class="h6">Simon Dang</span>
+          <span class="body-bold">Global Director of Marketing</span>
+        </div>
 
-			<p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
+  			<p>As a former food blogger, drinking baijiu came naturally to Simon as it pairs perfectly with spicy Sichuanese food.</p>
 
-			<figure class="article-img article-img__sm article-img__right">
-        <figcaption>Derek Sandhause</figcaption>
-        <img src="assets/placeholders/small-article-img1.png">
-      </figure>
+        <p>Simon is the Global Director of Marketing responsible for brand management and communications.  He brings over 15+ years of experience in both the US and China with expertise across advertising creative, branding, and PR.</p>
 
-		  <p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
-
-		  <blockquote>“When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.“</blockquote>
-
-			<p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
-
-			<p><span class="h6">Preamble Heading</span></p>
-
-			<p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
-
-			<figure class="article-img article-img__lg">
-        <figcaption class="body-caption">When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin .</figcaption>
-        <img class="body-img" src="assets/placeholders/small-article-img1.png">
-      </figure>
-
-			<p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look.</p>
-
-
-			<div class="grid-row grid-row__2block push-down-1">
-				<div class="grid-item">
-					<img src="assets/placeholders/small-article-img1.png" alt="" />
-				</div>
-
-        <div class="grid-item">
-					<span class="h4">Simon Dang</span>
-          <p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a</p>
-				</div>
+        <p>After co-founding Capital Spirits Baijiu bar in Beijing with Matthias and Bill, he went on to work in marketing and brand consulting for various liquor brands with Capital Spirits LTD Consulting.  Simon holds an MBA from Columbia Business School.</p>
       </div>
+    </div>
+    
 
-      <div class="grid-row grid-row__2block push-down-1">
-        <div class="grid-item">
-					<span class="h4">Derek Sandhaus</span>
-          <p>When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a second look. When a restaurant with the name Opium opens and starts selling Baijiu we’re sorely tempted to file it in the bin without a</p>
-				</div>
+    <div class="founders-block founders-imgRight">
+			<figure class="article-img">
+        <img src="assets/placeholders/derek.jpg">
+      </figure>
 
-				<div class="grid-item">
-					<img src="assets/placeholders/small-article-img1.png" alt="" />
-				</div>
+      <div class="founder-desc">
+        <div class="founder-name">
+          <span class="h6">Simon Dang</span>
+          <span class="body-bold">Global Director of Marketing</span>
+        </div>
+
+  			<p>As a former food blogger, drinking baijiu came naturally to Simon as it pairs perfectly with spicy Sichuanese food.</p>
+
+        <p>Simon is the Global Director of Marketing responsible for brand management and communications.  He brings over 15+ years of experience in both the US and China with expertise across advertising creative, branding, and PR.</p>
+
+        <p>After co-founding Capital Spirits Baijiu bar in Beijing with Matthias and Bill, he went on to work in marketing and brand consulting for various liquor brands with Capital Spirits LTD Consulting.  Simon holds an MBA from Columbia Business School.</p>
       </div>
 
     </div>

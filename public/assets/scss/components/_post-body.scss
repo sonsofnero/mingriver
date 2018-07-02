@@ -286,6 +286,7 @@
     margin-left: -10%;
     margin-right: -10%;
     @include dosis-regular;
+    margin-bottom: 1em;
     @media (max-width: 1000px) {
       margin-left: -5%;
       margin-right: -5%;
@@ -501,5 +502,56 @@
 
   .h4 {
     font-size: 3rem;
+  }
+}
+
+
+//Founders Page
+
+.founders-block {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items:flex-start;
+  align-content:flex-start;
+  padding: 3em 0;
+
+  .article-img,
+  .founder-desc {
+    width: 50%;
+  }
+}
+
+
+.founders-imgRight {
+  .founder-desc {
+    padding-right: 2em
+  }
+}
+.founders-imgLeft {
+  .founder-desc {
+    padding-left: 2em
+  }
+}
+
+.founders-imgRight {
+  flex-direction: row-reverse;
+}
+
+.founder-desc {
+  width: 50%;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.founder-name {
+  display: block;
+  margin-bottom: 1em;
+  span {
+    display: block;
+  }
+  .h6 {
+    margin-bottom: .5em;
   }
 }
