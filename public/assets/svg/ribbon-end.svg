@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="26px" viewBox="0 0 36 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#A88876" offset="0%"></stop>
+            <stop stop-color="#D0A995" offset="50.0406431%"></stop>
+            <stop stop-color="#967967" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="WEBSITE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-621.000000, -1128.000000)">
+            <g id="001---Story" transform="translate(366.000000, 1121.000000)">
+                <g id="Stacked-Group">
+                    <g id="Heading" transform="translate(154.000000, 0.000000)">
+                        <g id="Title-Holder" transform="translate(101.000000, 0.000000)">
+                            <g id="Left" transform="translate(0.000000, 7.000000)">
+                                <g id="Group">
+                                    <rect id="Rectangle-5" fill="#2A4546" x="0" y="0" width="36" height="26" rx="13"></rect>
+                                    <circle id="Oval" fill="url(#linearGradient-1)" cx="15" cy="13" r="5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
