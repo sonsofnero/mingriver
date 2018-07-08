@@ -277,11 +277,17 @@
       display: block;
       font-size: 1.5em;
       margin-bottom: 0.25em;
+      @media (max-width: $screen-sm) {
+        font-size: 1.15em;
+      }
     }
 
     .desc {
       display: block;
       font-size: 1.25em;
+      @media (max-width: $screen-sm) {
+        font-size: 1em;
+      }
     }
   }
 
@@ -1045,5 +1051,7 @@
   blockquote {
     display: block;
     margin-bottom: .5em;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }

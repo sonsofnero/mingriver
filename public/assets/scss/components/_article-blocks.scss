@@ -61,6 +61,7 @@
   transition: all 0.5s ease;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
   &:before {
     content: '';
     position: absolute;
@@ -83,7 +84,9 @@
     opacity: 0;
     transition: all 0.5s ease;
   }
-
+  .h4 {
+    transition: all 0.3s ease;
+  }
   img {
     width: 100%;
     display: block;
@@ -91,7 +94,6 @@
   }
 
   &:hover {
-    cursor: pointer;
 
     span.cover {
       opacity: 1;
@@ -146,14 +148,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    padding: 1em 1.25em 1em 1.25em;
-    color: $white;
     z-index: 2;
-    @include dosis-medium;
-    text-transform: uppercase;
-    font-size: .8em;
-    &:hover {
-      color: $mint;
+    list-style: none;
+    padding: .5em 1em;
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+    li {
+      display: inline-block;
+      @include dosis-medium;
+      text-transform: uppercase;
+      font-size: .7em;
+      padding: .5em;
+      color: $white;
     }
   }
 
@@ -220,7 +227,7 @@
 
     span {
       @include dosis-medium;
-      color: $red;
+      color: $white;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 1em;
