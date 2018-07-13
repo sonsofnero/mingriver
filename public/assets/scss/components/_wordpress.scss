@@ -228,3 +228,61 @@ width: 100%;
 		max-height: 240px;
 	}
 }
+
+
+//Age Gate
+body.age-restriction {
+	background-image: url('../assets/jpg/agegate-bg.jpg');
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  background-color: #eae9e3;
+}
+.age-gate-wrapper {
+	background-color: transparent;
+}
+.age-gate {
+	top: 10%;
+  transform: translateY(-10%);
+}
+.age-gate-form {
+	max-width: 650px;
+	background-color: transparent;
+	//Page Logo
+	.age-gate-heading.age-gate-logo {
+    margin: 0 auto 1.5em;
+	}
+	.age-gate-logo-image {
+		max-width: 400px;
+	}
+	.age-gate-message {
+		margin: 0 auto 1.5em;
+	}
+	//Age Question
+	.age-gate-challenge {
+		font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    margin-bottom: 1em;
+	}
+	//Button Styles
+	button {
+		@include body-bold;
+	  text-transform: uppercase;
+	  display: inline-block;
+	  transition: all 0.3s ease;
+	  padding: 1em 1.5em .85em;
+	  font-size: 0.9em;
+	  border-radius: 5px;
+	  border: none;
+		background-color: $black;
+    color: $white;
+    &:hover {
+      background-color: $red;
+      color: $white;
+    }
+	}
+	.age-gate-remember-wrapper {
+		margin: 1em 0;
+	}
+}

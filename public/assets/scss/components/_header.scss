@@ -280,7 +280,7 @@ ul.language {
         border-radius: 0 0 10px 10px;
         overflow: hidden;
       }
-      &:first-child {
+      &:nth-child(2) {
         border-bottom: none;
         border-radius: 10px 10px 0 0 ;
         overflow: hidden;

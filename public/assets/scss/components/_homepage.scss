@@ -280,9 +280,9 @@
   margin-top: -50px;
   width: 100%;
   position: relative;
-  box-sizing: content-box;
   img.bg {
-    width: 80%;
+    z-index: 0;
+    width: 70%;
     @media (max-width: $screen-md) {
       width: 100%;
     }
@@ -294,7 +294,7 @@
   .section2-bird {
     position: absolute;
     top: 25%;
-    left: 50%;
+    left: 70%;
     z-index: 3;
     img {
       width: 100%;
@@ -329,12 +329,11 @@
   z-index: -1;
   margin-top: -200px;
   width: 100%;
-  box-sizing: content-box;
   @media (max-width: $screen-sm) {
     margin-top: -120px;
   }
   img.bg {
-    width: 80%;
+    width: 70%;
     float: right;
     @media (max-width: $screen-md) {
       width: 100%;
@@ -371,7 +370,6 @@
 .bg03 {
   z-index: -1;
   margin-top: -150px;
-  box-sizing: content-box;
   @media (max-width: $screen-sm) {
     margin-top: -50px;
   }
@@ -398,9 +396,8 @@
 .bg04 {
   z-index: -1;
   margin-top: -150px;
-  box-sizing: content-box;
   img.bg {
-    width: 80%;
+    width: 70%;
     float: right;
     @media (max-width: $screen-md) {
       width: 100%;

@@ -49,9 +49,9 @@ include('components/header.php');
 <!--End: Section Two-->
 
 <div class="bg01 clearfix">
-  <img src="assets/png/Background-001.png" class="bg">
   <div class="section2-bird"><img src="assets/png/homebird2.png"></div>
   <div class="section2-cloud"><img src="assets/png/cloud1.png"></div>
+  <img src="assets/png/Background-001.png" class="bg">
 </div>
 
 <!--Start: Section Three-->
@@ -75,7 +75,7 @@ include('components/header.php');
 <!--End: Section Three-->
 
 <div class="bg02 clearfix">
-  <img src="assets/png/Background-002.png">
+  <img src="assets/png/Background-002.png" class="bg">
   <div class="section3-cloud"><img src="assets/png/cloud2.png"></div>
 </div>
 
@@ -105,7 +105,7 @@ include('components/header.php');
 
 
 <div class="bg03 clearfix">
-  <img src="assets/png/Background-003.png">
+  <img src="assets/png/Background-003.png" class="bg">
   <div class="section4-bird"><img src="assets/png/homebird3.png"></div>
 </div>
 
@@ -185,9 +185,9 @@ include('components/header.php');
 <!--End: Section Five-->
 
 <div class="bg04 clearfix">
-  <img src="assets/png/Background-004.png">
   <div class="section5-bird"><img src="assets/png/homebird2.png"></div>
   <div class="section5-cloud"><img src="assets/png/cloud2.png"></div>
+  <img src="assets/png/Background-004.png" class="bg">
 </div>
 
 <!--Start: Section Five-->
