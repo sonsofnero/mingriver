@@ -48,103 +48,103 @@ include('components/header.php');
 
 		<div class="grid-row grid-row__2block grid-row__lgFirst push-down-2">
 
-      <a href="" class="grid-item">
+      <div class="grid-item">
         <ul class="category-tag">
-          <li>Category 1</li>
-          <li>Category 2</li>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
         </ul>
-				<div class="content-block">
+				<a href="" class="content-block">
 					<h4 class="h4">Beginners Guide to Baijiu</h4>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
-				</div>
+				</a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</a>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+			</div>
 
-      <a href="" class="grid-item">
+      <div class="grid-item">
         <ul class="category-tag">
-          <li>Category 1</li>
-          <li>Category 2</li>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
         </ul>
-				<div class="content-block">
-					<h4 class="h4">Beginners Guide to Baijiu</h4>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
-				</div>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</a>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
 		</div>
 
 
     <div class="grid-row grid-row__3block push-down-2">
 
-      <a href="" class="grid-item">
+      <div class="grid-item">
         <ul class="category-tag">
-          <li>Category 1</li>
-          <li>Category 2</li>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
         </ul>
-				<div class="content-block">
-					<h4 class="h4">Beginners Guide to Baijiu</h4>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</a>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
-      <a href="" class="grid-item">
+      <div class="grid-item">
         <ul class="category-tag">
-          <li>Category 1</li>
-          <li>Category 2</li>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
         </ul>
-				<div class="content-block">
-					<h4 class="h4">Beginners Guide to Baijiu</h4>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</a>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
-      <a href="" class="grid-item">
+      <div class="grid-item">
         <ul class="category-tag">
-          <li>Category 1</li>
-          <li>Category 2</li>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
         </ul>
-				<div class="content-block">
-					<h4 class="h4">Beginners Guide to Baijiu</h4>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</a>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
 		</div>
 
 
     <div class="grid-row grid-row__2block grid-row__lgFirst push-down-2">
 
-      <a href="" class="grid-item">
+      <div class="grid-item">
         <ul class="category-tag">
-          <li>Category 1</li>
-          <li>Category 2</li>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
         </ul>
-				<div class="content-block">
+				<a href="" class="content-block">
 					<h4 class="h4">Beginners Guide to Baijiu</h4>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
-				</div>
+				</a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</a>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+			</div>
 
-      <a href="" class="grid-item">
+      <div class="grid-item">
         <ul class="category-tag">
-          <li>Category 1</li>
-          <li>Category 2</li>
+          <li><a href="">Category 1</a></li>
+          <li><a href="">Category 2</a></li>
         </ul>
-				<div class="content-block">
+				<a href="" class="content-block">
 					<h4 class="h4">Beginners Guide to Baijiu</h4>
           <p>We love baijiu, but there can be a big barrier to entry to get others into drinking the world’s most consumed spirit. </p>
-				</div>
+				</a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</a>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+			</div>
 
 		</div>
 
@@ -172,76 +172,76 @@ include('components/header.php');
 		<div class="grid-row grid-row__3block">
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
       <div class="grid-item">
-				<div class="content-block">
-					<a href="" class="h4">Beginners Guide to Baijiu</a>
-				</div>
+        <a href="" class="content-block">
+          <h4 class="h4">Beginners Guide to Baijiu</h4>
+        </a>
         <span class="cover"></span>
-        <img src="assets/placeholders/small-article-img1.png">
-			</div>
+        <a href=""><img src="assets/placeholders/small-article-img1.png"></a>
+      </div>
 
 		</div>
 
