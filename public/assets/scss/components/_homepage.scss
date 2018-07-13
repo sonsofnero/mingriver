@@ -4,15 +4,22 @@
 }
 
 .home-section {
+  position: relative;
   padding: 0 2em;
-  .arrow-dwn {
-    display: block;
-    background-image: url('../assets/svg/arrow-down.svg');
-    background-size: 18px 44px;
-    width: 18px;
-    height: 44px;
-    margin: 0px auto;
-    animation: dribble 3s ease infinite;
+  z-index: 5;
+  @media (max-width: $screen-sm) {
+    padding: 0 1em;
+  }
+
+  .home-content {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+
+    &.fade-in {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 
   .content-block {
@@ -41,7 +48,7 @@
         background-image: url('../assets/svg/ribbon-end.svg');
         background-size: 36px 26px;
         position: absolute;
-        left: -10px;
+        left: -11px;
       }
       &:after {
         content: '';
@@ -50,7 +57,7 @@
         background-image: url('../assets/svg/ribbon-end.svg');
         background-size: 36px 26px;
         position: absolute;
-        right: -10px;
+        right: -11px;
         transform: rotate(-180deg);
       }
     }
@@ -68,16 +75,27 @@
       display: block;
       line-height: 1.5;
       font-size: 2rem;
+      @media (max-width: $screen-sm) {
+        max-width: 100%;
+      }
     }
 
     .feat-img {
       position: relative;
       margin: 3em 0 2em;
+      @media (max-width: $screen-sm) {
+        margin: 2em 0 2em;
+      }
       .badge {
         position: absolute;
         width: 200px;
         top: -100px;
         right: -100px;
+        @media (max-width: $screen-sm) {
+          width: 100px;
+          top: -20px;
+          right: -20px;
+        }
         img {
           width: 100%;
         }
@@ -92,6 +110,9 @@
       font-size: .9em;
       text-align: left;
       margin-bottom: 2em;
+      @media (max-width: $screen-sm) {
+        padding: 0 1em;
+      }
     }
 
     .solid-btn {
@@ -107,6 +128,9 @@
           color: $green;
           font-size: 3em;
           padding: .5em;
+          @media (max-width: $screen-sm) {
+            font-size: 2em;
+          }
           &:hover {
             color: $white;
           }
@@ -125,6 +149,43 @@
   }
 }
 
+.arrow-dwn {
+  display: block;
+  background-image: url('../assets/svg/arrow-down.svg');
+  background-size: 18px 44px;
+  width: 18px;
+  height: 44px;
+  margin: 0px auto;
+  animation: dribble 3s ease infinite;
+}
+
+.top-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 6;
+}
+
+.lead-txt {
+  width: 35%;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  padding: 3em 1em;
+  @media (max-width: $screen-sm) {
+    width: 100%;
+  }
+  h1 {
+    @include body-bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .85em;
+    line-height: 1.75;
+    margin-bottom: 1em;
+  }
+}
+
 
 .section-one {
 	width: 100%;
@@ -134,51 +195,264 @@
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
+  @media (max-width: $screen-sm) {
+    min-height: 900px;
+  }
 
-  .lead-txt {
-    width: 35%;
-    display: block;
-    margin: 0px auto;
-    text-align: center;
-    padding: 3em 1em;
-    p {
-      @include body-bold;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: .85em;
-      line-height: 1.75;
+  //Section One Bird
+  .section1-bird {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    z-index: 3;
+    img {
+      width: 100%;
+      @media (max-width: 1400px) {
+        width: 90%;
+      }
+      @media (max-width: 900px) {
+        width: 80%;
+      }
+    }
+    @media (max-width: $screen-md) {
+      top: 35%;
+      left: 45%;
+    }
+    @media (max-width: 500px) {
+      left: 25%;
+    }
+  }
+
+  //Section One Clouds
+  .section1-cloud1 {
+    left: 10%;
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    img {
+      width: 80%;
+      @media (max-width: 1400px) {
+        width: 60%;
+      }
+      @media (max-width: 500px) {
+        width: 40%;
+      }
+    }
+    @media (max-width: $screen-md) {
+      top: 35%;
+    }
+    @media (max-width: 500px) {
+      left: 10%;
+    }
+  }
+
+  .section1-cloud2 {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    z-index: 1;
+    img {
+      width: 100%;
+      @media (max-width: $screen-md) {
+        width: 90%;
+      }
+    }
+    @media (max-width: $screen-md) {
+      left: 70%;
+    }
+    @media (max-width: 500px) {
+      left: 50%;
     }
   }
 }
 
-.bg01 {
-  z-index: -1;
-  width: 80%;
-  margin-top: -50px;
-}
-
 .section-three {
   margin-top: -150px;
+  @media (max-width: $screen-md) {
+    margin-top: -100px;
+  }
+  @media (max-width: $screen-sm) {
+    margin-top: 0px;
+  }
+}
+
+.bg01 {
+  margin-top: -50px;
+  width: 100%;
+  position: relative;
+  box-sizing: content-box;
+  img.bg {
+    width: 80%;
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
+  }
+  @media (max-width: $screen-md) {
+    margin-top: 0px;
+  }
+  //Section Two Bird
+  .section2-bird {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 3;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 1300px) {
+      top: 0%;
+      img {
+        width: 85%;
+      }
+    }
+  }
+
+  //Section Two Clouds
+  .section2-cloud {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 1300px) {
+      top: 40%;
+      img {
+        width: 85%;
+      }
+    }
+  }
 }
 
 .bg02 {
   z-index: -1;
-  width: 80%;
   margin-top: -200px;
-  float: right;
+  width: 100%;
+  box-sizing: content-box;
+  @media (max-width: $screen-sm) {
+    margin-top: -120px;
+  }
+  img.bg {
+    width: 80%;
+    float: right;
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
+  }
+  //Section Three Clouds
+  .section3-cloud {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    z-index: 1;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 1300px) {
+      top: 38%;
+      left: 5%;
+      img {
+        width: 65%;
+        @media (max-width: 500px) {
+          width: 55%;
+        }
+      }
+    }
+    @media (max-width: 650px) {
+      top: 41%;
+    }
+    @media (max-width: 500px) {
+      top: 44%;
+    }
+  }
 }
 
 .bg03 {
   z-index: -1;
-  width: 60%;
   margin-top: -150px;
+  box-sizing: content-box;
+  @media (max-width: $screen-sm) {
+    margin-top: -50px;
+  }
+  img.bg {
+    width: 60%;
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
+  }
+  .section4-bird {
+    position: absolute;
+    top: 51%;
+    left: 60%;
+    z-index: 3;
+    img {
+      width: 100%;
+    }
+    @media (max-width: 500px) {
+      top: 57%;
+    }
+  }
 }
 
 .bg04 {
   z-index: -1;
-  width: 80%;
   margin-top: -150px;
-  float: right;
+  box-sizing: content-box;
+  img.bg {
+    width: 80%;
+    float: right;
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
+  }
+}
+
+.section5-bird {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  z-index: 3;
+  img {
+    width: 100%;
+  }
+  @media (max-width: 1300px) {
+    top: 77%;
+    left: 5%;
+    img {
+      width: 65%;
+    }
+  }
+  @media (max-width: 650px) {
+    top: 81%;
+  }
+  @media (max-width: 400px) {
+    top: 84%;
+  }
+}
+
+//Section One Clouds
+.section5-cloud {
+  position: absolute;
+  top: 69%;
+  left: 20%;
+  z-index: 1;
+  img {
+    width: 80%;
+  }
+  @media (max-width: 1300px) {
+    top: 77%;
+    left: 5%;
+    img {
+      width: 45%;
+    }
+  }
+  @media (max-width: 650px) {
+    top: 82%;
+  }
+  @media (max-width: 400px) {
+    top: 87%;
+  }
 }
 
 .footer-img {
@@ -186,3 +460,6 @@
   text-align: center;
   margin: 2em auto 0px auto;
 }
+
+
+//Birds

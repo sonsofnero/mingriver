@@ -161,6 +161,12 @@
       font-size: .7em;
       padding: .5em;
       color: $white;
+      a {
+        color: $white;
+        &:hover {
+          color: $mint;
+        }
+      }
     }
   }
 

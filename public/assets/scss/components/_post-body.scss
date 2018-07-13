@@ -6,13 +6,13 @@
   position: relative;
   padding: 0 5em;
   @media (max-width: 1200px) {
-    padding: 2em 2em 0;
+    padding: 0 2em 0;
   }
   @media (max-width: $screen-sm) {
-    padding: 2em 1em 0;
+    padding: 0 1em 0;
   }
   @media (max-width: 550px) {
-    padding: 2em 0;
+    padding: 0 0;
   }
 
   &__pullup {
@@ -241,6 +241,12 @@
     }
   }
 
+  @media (max-width: $screen-sm) {
+    &__pad {
+      padding: 2em 0 2em;
+    }
+  }
+
   .pad-more {
     display: block;
     width: 100%;
@@ -252,7 +258,7 @@
     border-bottom: 1px solid #BBBBBB;
   }
 
-  .h1 {
+  h1, .h1 {
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -261,13 +267,16 @@
     padding: 0 0 .5em;
   }
 
+  h2 {
+    @include body-medium;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
   p {
     font-size: 1em;
     font-weight: 400;
-    margin-bottom: 2em;
-    @media (max-width: $screen-md) {
-      margin-bottom: 1.5em;
-    }
+    margin-bottom: 1.5em;
     @media (max-width: $screen-sm) {
       font-size: 1em;
     }
@@ -523,18 +532,38 @@
   .article-img,
   .founder-desc {
     width: 50%;
+    @media (max-width: $screen-sm) {
+      width: 100%;
+    }
   }
 }
 
 
 .founders-imgRight {
   .founder-desc {
-    padding-right: 2em
+    padding-right: 2em;
+  }
+  @media (max-width: $screen-sm) {
+    .founder-desc {
+      padding-right: 0em;
+    }
+    .article-img {
+      margin-bottom: 2em;
+    }
   }
 }
 .founders-imgLeft {
   .founder-desc {
-    padding-left: 2em
+    padding-left: 2em;
+  }
+
+  @media (max-width: $screen-sm) {
+    .founder-desc {
+      padding-left: 0em;
+    }
+    .article-img {
+      margin-bottom: 2em;
+    }
   }
 }
 

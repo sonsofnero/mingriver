@@ -5,20 +5,28 @@ include('components/header.php');
 
 <section class="home-page">
 
+<div class="top-section">
+  <div class="lead-txt">
+    <h1>Journey down river into the heart of Sichuan Discover a land of fiery flavors Taste tradition</h1>
+    <a href="#home2" class="arrow-dwn"></a>
+  </div>
+</div>
+
 <!--Start: Section One-->
 <div class="home-section section-one">
-  <h1 class="lead-txt">
-    <p>Journey down river into the heart of Sichuan Discover a land of fiery flavors Taste tradition</p>
-    <a href="" class="arrow-dwn"></a>
-  </h1>
+
+  <div class="section1-bird"><img src="assets/png/homebird1.png"></div>
+  <div class="section1-cloud1"><img src="assets/png/cloud2.png"></div>
+  <div class="section1-cloud2"><img src="assets/png/cloud1.png"></div>
+
 </div>
 <!--End: Section One-->
 
 
 <!--Start: Section Two-->
-<div class="home-section section-two">
+<div class="home-section section-two" id="home2">
 
-  <div class="content-block">
+  <div class="content-block home-content">
     <div class="scroll-banner">The origins of Ming River</div>
     <h2 class="h1">Our Story</h2>
     <span class="sub-title">Ming River is the original Sichuan baijiu. Using techniques passed down from master to apprentice for twenty-four generations, it is an authentic and uncompromising Chinese grain spirit. Discover a land of fiery flavors. Taste tradition.</span>
@@ -34,18 +42,22 @@ include('components/header.php');
       <p>Proin fermentum porta scelerisque. Pellentesque consequat purus vitae justo placerat, a viverra sem interdum. Maecenas porttitor metus eu turpis rhoncus dignissim.</p>
     </div>
 
-    <a href="" class="arrow-dwn"></a>
+    <a href="#home3" class="arrow-dwn"></a>
   </div>
 
 </div>
 <!--End: Section Two-->
 
-<img src="assets/png/Background-001.png" class="bg01">
+<div class="bg01 clearfix">
+  <img src="assets/png/Background-001.png" class="bg">
+  <div class="section2-bird"><img src="assets/png/homebird2.png"></div>
+  <div class="section2-cloud"><img src="assets/png/cloud1.png"></div>
+</div>
 
 <!--Start: Section Three-->
-<div class="home-section section-three">
+<div class="home-section section-three" id="home3">
 
-  <div class="content-block">
+  <div class="content-block home-content">
     <div class="scroll-banner">The origins of Ming River</div>
     <h3 class="h1">About Baijiu</h3>
     <span class="sub-title">Ming River is the original Sichuan baijiu. Using techniques passed down from master to apprentice for twenty-four generations, it is an authentic and uncompromising Chinese grain spirit. Discover a land of fiery flavors. Taste tradition.</span>
@@ -56,18 +68,21 @@ include('components/header.php');
 
     <a href="" class="solid-btn solid-btn--red">Read More</a>
 
-    <a href="" class="arrow-dwn"></a>
+    <a href="#home4" class="arrow-dwn"></a>
   </div>
 
 </div>
 <!--End: Section Three-->
 
-<img src="assets/png/Background-002.png" class="bg02">
+<div class="bg02 clearfix">
+  <img src="assets/png/Background-002.png">
+  <div class="section3-cloud"><img src="assets/png/cloud2.png"></div>
+</div>
 
 <!--Start: Section Four-->
-<div class="home-section section-four">
+<div class="home-section section-four" id="home4">
 
-  <div class="content-block">
+  <div class="content-block home-content">
     <div class="scroll-banner">Where Ming River is Made</div>
     <h4 class="h1">The Distillery</h4>
     <span class="sub-title">Small Excerpt about the Distillery Here</span>
@@ -82,25 +97,29 @@ include('components/header.php');
 
     <a href="" class="solid-btn solid-btn--red">Learn More</a>
 
-    <a href="" class="arrow-dwn"></a>
+    <a href="#home5" class="arrow-dwn"></a>
   </div>
 
 </div>
 <!--End: Section Four-->
 
-<img src="assets/png/Background-003.png" class="bg03">
+
+<div class="bg03 clearfix">
+  <img src="assets/png/Background-003.png">
+  <div class="section4-bird"><img src="assets/png/homebird3.png"></div>
+</div>
 
 <!--Start: Section Five-->
-<div class="home-section section-five">
+<div class="home-section section-five" id="home5">
 
-  <div class="content-block">
+  <div class="content-block home-content">
     <div class="scroll-banner">Latest News</div>
     <h5 class="h1">Articles</h5>
     <span class="sub-title">Small Excerpt about the Distillery Here</span>
   </div>
 
-  <div class="grid-row grid-row__3block">
-    <div class="grid-item">
+  <div class="grid-row grid-row__3block" id="articlesScene">
+    <div class="grid-item grid-fadeIn">
       <a href="" class="category-tag">Articles</a>
       <div class="content-block">
         <a href="" class="h4">Beginners Guide to Baijiu</a>
@@ -109,7 +128,7 @@ include('components/header.php');
       <img src="assets/placeholders/small-article-img1.png">
     </div>
 
-    <div class="grid-item">
+    <div class="grid-item grid-fadeIn">
       <a href="" class="category-tag">Articles</a>
       <div class="content-block">
         <a href="" class="h4">Beginners Guide to Baijiu</a>
@@ -118,7 +137,7 @@ include('components/header.php');
       <img src="assets/placeholders/small-article-img1.png">
     </div>
 
-    <div class="grid-item">
+    <div class="grid-item grid-fadeIn">
       <a href="" class="category-tag">Articles</a>
       <div class="content-block">
         <a href="" class="h4">Beginners Guide to Baijiu</a>
@@ -128,20 +147,52 @@ include('components/header.php');
     </div>
   </div>
 
+  <!-- <div id="scene">
+    <div class="animation">
+      <a href="" class="category-tag">Articles</a>
+      <div class="content-block">
+        <a href="" class="h4">Beginners Guide to Baijiu</a>
+      </div>
+      <span class="cover"></span>
+      <img src="assets/placeholders/small-article-img1.png">
+    </div>
+
+    <div class="animation">
+      <a href="" class="category-tag">Articles</a>
+      <div class="content-block">
+        <a href="" class="h4">Beginners Guide to Baijiu</a>
+      </div>
+      <span class="cover"></span>
+      <img src="assets/placeholders/small-article-img1.png">
+    </div>
+
+    <div class="animation">
+      <a href="" class="category-tag">Articles</a>
+      <div class="content-block">
+        <a href="" class="h4">Beginners Guide to Baijiu</a>
+      </div>
+      <span class="cover"></span>
+      <img src="assets/placeholders/small-article-img1.png">
+    </div>
+  </div> -->
+
   <div class="content-block">
     <a href="" class="solid-btn solid-btn--red">View Articles</a>
-
-    <a href="" class="arrow-dwn"></a>
+    <a href="#home6" class="arrow-dwn"></a>
   </div>
 
 </div>
 <!--End: Section Five-->
 
-<img src="assets/png/Background-004.png" class="bg04">
+<div class="bg04 clearfix">
+  <img src="assets/png/Background-004.png">
+  <div class="section5-bird"><img src="assets/png/homebird2.png"></div>
+  <div class="section5-cloud"><img src="assets/png/cloud2.png"></div>
+</div>
 
 <!--Start: Section Five-->
-<div class="home-section section-six">
-  <div class="content-block">
+<div class="home-section section-six" id="home6">
+  <div class="content-block home-content">
     <h6 class="h1 text--uppercase">Contact Ming River</h6>
 
     <ul class="socials">
