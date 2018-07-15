@@ -424,6 +424,9 @@ ul.language {
 
     li {
       border-bottom: 1px solid #60807d;
+      &:first-child {
+        display: none;
+      }
 
       a {
         padding: 1em 1.5em;

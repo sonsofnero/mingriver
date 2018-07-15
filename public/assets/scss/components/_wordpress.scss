@@ -129,6 +129,10 @@ width: 100%;
 	width: 100%;
 }
 
+.grid-item > img.wpsmartcrop-image {
+	height: 320px;
+}
+
 .article-img img.wpsmartcrop-image, .event-article .wpsmartcrop-image {
 	display: block;
 	width: 100%;
@@ -236,13 +240,22 @@ body.age-restriction {
   background-position: bottom center;
   background-repeat: repeat-x;
   background-color: #eae9e3;
+	height: 100%;
+  overflow: visible;
 }
 .age-gate-wrapper {
 	background-color: transparent;
+	position: relative;
+	height: 100%;
 }
 .age-gate {
-	top: 10%;
-  transform: translateY(-10%);
+	top: auto;
+  transform: none;
+	position: relative;
+	padding-bottom: 8em;
+	@media (max-width: 1000px) {
+		padding-bottom: 8em;
+	}
 }
 .age-gate-form {
 	max-width: 650px;
@@ -253,6 +266,7 @@ body.age-restriction {
 	}
 	.age-gate-logo-image {
 		max-width: 400px;
+		width: 100%;
 	}
 	.age-gate-message {
 		margin: 0 auto 1.5em;

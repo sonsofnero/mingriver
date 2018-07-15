@@ -61,6 +61,9 @@
   padding: .7em 0 .5em 0;
   border-bottom: 1px solid #BAC3C2;
   width: 100%;
+  @media (max-width: 900px) {
+    border-top: 1px solid #BAC3C2;
+  }
 }
 .breadcrumb-list {
   display: block;
