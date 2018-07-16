@@ -1,11 +1,11 @@
 jQuery(function($) {
 
-var overlay = document.getElementById("loader");
 
-window.addEventListener('load', function(){
-  loader.style.display = 'none';
-})
 
+$(window).addEventListener("load", function(){
+	var load_screen = document.getElementById("loader");
+	document.body.removeChild(loader);
+});
 
 //Sticky Nav
 $(window).scroll(function () {
