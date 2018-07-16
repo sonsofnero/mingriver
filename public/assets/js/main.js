@@ -1,8 +1,11 @@
 jQuery(function($) {
 
-$(window).load(function(){
-     $('.loader').fadeOut();
-});
+var overlay = document.getElementById("loader");
+
+window.addEventListener('load', function(){
+  loader.style.display = 'none';
+})
+
 
 //Sticky Nav
 $(window).scroll(function () {
@@ -211,18 +214,18 @@ $(document).ready(function(){
     offset: 100
   })
   .setTween(TweenMax.from('.section1-cloud2', 1, {
-    y: '10%', ease:Power0.easeNone}))
+    y: '20%', ease:Power0.easeNone}))
   .addTo(controller);
 
 
   //Section1 Bird 1
   var bird1 = new ScrollMagic.Scene({
     triggerElement: ".section1-bird",
-    triggerHook: 0.5,
+    triggerHook: 1,
     duration: '100%'
   })
   .setTween(TweenMax.from('.section1-bird', 1, {
-    y: '20%', ease:Power0.easeNone}))
+    y: '40%', ease:Power0.easeNone}))
   .addTo(controller);
 
   //Section2 Cloud

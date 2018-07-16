@@ -1,4 +1,4 @@
-<div class="loader">
+<div id="loader">
 	<div class="loader-logo"><img src="assets/svg/footer-logo-green.svg"></div>
 </div>
 
