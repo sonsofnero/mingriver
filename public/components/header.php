@@ -1,3 +1,7 @@
+<div class="loader">
+	<div class="loader-logo"><img src="assets/svg/footer-logo-green.svg"></div>
+</div>
+
 <header>
 	<div class="top-bar">
 		<a href="#" class="mobile-nav-btn">

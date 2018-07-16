@@ -1,5 +1,9 @@
 jQuery(function($) {
 
+$(window).load(function(){
+     $('.loader').fadeOut();
+});
+
 //Sticky Nav
 $(window).scroll(function () {
   var $this = $(this),
