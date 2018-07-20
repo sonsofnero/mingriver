@@ -40,7 +40,8 @@
       position: relative;
       display: inline-block;
       margin-bottom: 2em;
-
+      color: $white;
+      
       &:before {
         content: '';
         width: 36px;
