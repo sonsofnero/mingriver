@@ -21,11 +21,10 @@ gulp.task('styles', function () {
       this.emit('end');
     }))
     .pipe(sourcemaps.init())
-      .pipe(sass({
-        outputStyle: 'compressed'
-      }))
-      .pipe(autoprefixer())
-
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }))
+    .pipe(autoprefixer())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(DIST_PATH))
     .pipe(livereload());
